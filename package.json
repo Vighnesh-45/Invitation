@@ -1,0 +1,15 @@
+{
+  "name": "marathi-sindhi-wedding-invitation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bilingual Marathi × Sindhi wedding invitation website",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}

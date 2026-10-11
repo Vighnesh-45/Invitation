@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="100%" height="120" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="thread" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C8553D"/>
+      <stop offset="50%" stop-color="#FFC23C"/>
+      <stop offset="100%" stop-color="#7A1F2B"/>
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D6A4F"/>
+      <stop offset="50%" stop-color="#40916C"/>
+      <stop offset="100%" stop-color="#1B4332"/>
+    </linearGradient>
+    <radialGradient id="marigoldOrange" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFE082"/>
+      <stop offset="45%" stop-color="#FF9E00"/>
+      <stop offset="90%" stop-color="#E85D04"/>
+    </radialGradient>
+    <radialGradient id="marigoldYellow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF9C4"/>
+      <stop offset="50%" stop-color="#FFD54F"/>
+      <stop offset="90%" stop-color="#FFA000"/>
+    </radialGradient>
+    <g id="mangoLeaf">
+      <!-- Mango Leaf Shape -->
+      <path d="M0 0 C-18 25 -22 65 0 95 C22 65 18 25 0 0 Z" fill="url(#leafGrad)" stroke="#1B4332" stroke-width="1"/>
+      <path d="M0 5 L0 85" stroke="#74C69D" stroke-width="1.2" opacity="0.6"/>
+      <!-- Veins -->
+      <path d="M0 25 L-8 35 M0 45 L-10 57 M0 65 L-7 74" stroke="#74C69D" stroke-width="0.8" opacity="0.5"/>
+      <path d="M0 25 L8 35 M0 45 L10 57 M0 65 L7 74" stroke="#74C69D" stroke-width="0.8" opacity="0.5"/>
+    </g>
+    <g id="marigoldFlower">
+      <!-- Petals ring 1 -->
+      <circle cx="0" cy="0" r="18" fill="url(#marigoldOrange)"/>
+      <circle cx="0" cy="0" r="14" fill="url(#marigoldYellow)"/>
+      <!-- Petal scallops -->
+      <path d="M-14 0 Q-18 -8 -10 -14 Q-3 -18 0 -14 Q8 -18 14 -10 Q18 -3 14 6 Q12 14 0 14 Q-12 14 -14 0 Z" fill="url(#marigoldOrange)" opacity="0.5"/>
+      <circle cx="0" cy="0" r="7" fill="#E85D04"/>
+      <circle cx="0" cy="0" r="4" fill="#FFB703"/>
+    </g>
+    <g id="toranUnit">
+      <!-- Hanging thread -->
+      <line x1="0" y1="0" x2="0" y2="15" stroke="#B8860B" stroke-width="2"/>
+      <use href="#mangoLeaf" x="0" y="15" transform="rotate(-12, 0, 15)"/>
+      <use href="#mangoLeaf" x="35" y="15" transform="rotate(12, 35, 15)"/>
+      <use href="#mangoLeaf" x="18" y="20"/>
+      <!-- Marigold bells -->
+      <use href="#marigoldFlower" x="18" y="18"/>
+      <circle cx="18" cy="18" r="3" fill="#FFF"/>
+    </g>
+  </defs>
+
+  <!-- Top Sacred Thread (Kalava) -->
+  <path d="M0 12 Q300 22 600 12 Q900 22 1200 12" stroke="url(#thread)" stroke-width="6" fill="none"/>
+  <path d="M0 14 Q300 24 600 14 Q900 24 1200 14" stroke="#B8860B" stroke-width="1.5" stroke-dasharray="4,8" fill="none"/>
+
+  <!-- Repeating Festive Toran Leaves & Marigolds -->
+  <use href="#toranUnit" x="30" y="10"/>
+  <use href="#toranUnit" x="130" y="10"/>
+  <use href="#toranUnit" x="230" y="10"/>
+  <use href="#toranUnit" x="330" y="10"/>
+  <use href="#toranUnit" x="430" y="10"/>
+  <use href="#toranUnit" x="530" y="10"/>
+  <use href="#toranUnit" x="630" y="10"/>
+  <use href="#toranUnit" x="730" y="10"/>
+  <use href="#toranUnit" x="830" y="10"/>
+  <use href="#toranUnit" x="930" y="10"/>
+  <use href="#toranUnit" x="1030" y="10"/>
+  <use href="#toranUnit" x="1130" y="10"/>
+</svg>

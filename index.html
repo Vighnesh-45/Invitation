@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohan &amp; Simran | Wedding Invitation</title>
+  
+  <meta name="description" content="A warm, celebratory wedding invitation for Rohan Deshmukh and Simran Advani. Join us in Pune, Maharashtra on 14th February 2027.">
+  <meta name="author" content="Deshmukh &amp; Advani Families">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Open Graph / WhatsApp / Facebook Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rohan &amp; Simran | Wedding Invitation">
+  <meta property="og:description" content="We warmly invite you to celebrate the wedding of Rohan &amp; Simran in Pune on 14th February 2027.">
+  <meta property="og:image" content="/og-preview.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rohan &amp; Simran | Wedding Invitation">
+  <meta name="twitter:description" content="Join us in celebrating the wedding of Rohan &amp; Simran in Pune.">
+  <meta name="twitter:image" content="/og-preview.svg">
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Google Fonts Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,400&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Modular CSS Hierarchy -->
+  <link rel="stylesheet" href="/src/css/tokens.css">
+  <link rel="stylesheet" href="/src/css/base.css">
+  <link rel="stylesheet" href="/src/css/components.css">
+  <link rel="stylesheet" href="/src/css/motion.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#hero" class="skip-link">Skip to invitation content</a>
+
+  <!-- Ambient Floating Marigold Petals Layer -->
+  <div id="ambient-petals" class="ambient-petals-layer" aria-hidden="true"></div>
+
+  <!-- =========================================================================
+       1. OPENING EXPERIENCE OVERLAY (First Screen)
+       ========================================================================= -->
+  <aside id="intro-overlay" class="intro-overlay" role="dialog" aria-modal="true" aria-label="Welcome greeting from the bride and groom">
+    <!-- Top Mango Leaf & Marigold Toran Border -->
+    <div class="intro-top-toran" aria-hidden="true">
+      <img src="/motifs/toran.svg" alt="" width="1200" height="90">
+    </div>
+
+    <!-- Center Stage: Speech Banner & Avatars -->
+    <div class="intro-center-stage">
+      <div class="intro-greeting-banner">
+        <div style="font-family: var(--font-serif-en); font-size: clamp(1.4rem, 4vw, 2.2rem); color: var(--maroon); font-weight: 700; margin-bottom: 4px;">
+          Welcome to Our Wedding!
+        </div>
+        <div class="intro-greeting-en">A Warm &amp; Heartfelt Celebration</div>
+      </div>
+
+      <div class="intro-avatars-row">
+        <!-- Groom Avatar (PNG) -->
+        <div class="intro-avatar-wrapper intro-avatar-groom">
+          <img src="/assets/groom_image.png" alt="Groom Rohan" class="intro-avatar-img" width="240" height="240">
+          <span class="intro-avatar-tag">Rohan • Groom</span>
+        </div>
+
+        <!-- Bride Avatar (PNG) -->
+        <div class="intro-avatar-wrapper intro-avatar-bride">
+          <img src="/assets/bride_image.png" alt="Bride Simran" class="intro-avatar-img" width="240" height="240">
+          <span class="intro-avatar-tag">Simran • Bride</span>
+        </div>
+      </div>
+
+      <div class="intro-action-container">
+        <button id="open-invitation-btn" type="button" class="btn btn-diya-open" aria-label="Open wedding invitation and enter site">
+          <img src="/motifs/diya.svg" alt="" class="btn-diya-icon" aria-hidden="true" width="24" height="24">
+          <span>Open Invitation</span>
+        </button>
+        <span style="font-size: 0.85rem; color: var(--ink-muted);">Click to view the celebration details</span>
+      </div>
+    </div>
+
+    <!-- Toran / Garland Accent Bottom -->
+    <div class="intro-top-toran" style="transform: rotate(180deg);" aria-hidden="true">
+      <img src="/motifs/toran.svg" alt="" width="1200" height="50">
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       2. STICKY MINI-NAV & CONTROLS BAR
+       ========================================================================= -->
+  <header class="sticky-nav-bar" role="banner">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand">Rohan &amp; Simran</a>
+
+      <nav class="nav-links" aria-label="Invitation Navigation">
+        <a href="#hero" class="nav-link active">Welcome</a>
+        <a href="#families" class="nav-link">Families</a>
+        <a href="#countdown" class="nav-link">Countdown</a>
+        <a href="#events" class="nav-link">Events</a>
+        <a href="#maps" class="nav-link">Venues</a>
+        <a href="#rsvp" class="nav-link">Save the Date</a>
+      </nav>
+
+      <div class="nav-controls">
+        <button id="replay-intro-btn" type="button" class="icon-btn" title="View Welcome Screen again" aria-label="Replay intro greeting">
+          <span>👋 Welcome</span>
+        </button>
+        <button id="toggle-motion-btn" type="button" class="icon-btn" title="Pause or Resume subtle animations" aria-label="Toggle motion effects" aria-pressed="false">
+          <span class="motion-icon" aria-hidden="true">⏸</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       3. HERO SECTION
+       ========================================================================= -->
+  <main id="main-content">
+    <section id="hero" class="hero-section" aria-labelledby="hero-title">
+      <div class="container">
+        <!-- Auspicious Lord Ganesha Invocation as requested: || ॐ श्री गणेशाय नमः || -->
+        <div class="ganesha-invocation-card reveal-on-scroll">
+          <div class="ganesha-avatar-wrap">
+            <img src="/assets/ganesha.png" alt="Bhagwan Shri Ganesha Blessings" class="ganesha-avatar-img" width="120" height="120">
+          </div>
+          <div class="ganesha-mantra-title">
+            <img src="/motifs/diya.svg" alt="" class="ganesha-diya-flank" width="24" height="24" aria-hidden="true">
+            <span>|| ॐ श्री गणेशाय नमः ||</span>
+            <img src="/motifs/diya.svg" alt="" class="ganesha-diya-flank" width="24" height="24" aria-hidden="true">
+          </div>
+        </div>
+
+        <!-- Optional Personalized Guest Greeting (Loaded securely via JS ?guest=Name) -->
+        <div id="guest-greeting-box" class="guest-greeting-box" style="display: none;">
+          <h2 id="guest-name" class="guest-greeting-text">Dear Esteemed Guest,</h2>
+          <p class="guest-greeting-sub">With joyous hearts, we cordially invite you and your family to join us in celebrating our wedding.</p>
+        </div>
+
+        <!-- Auspicious Names Banner -->
+        <div class="hero-names-group reveal-on-scroll">
+          <div style="font-size: 0.95rem; text-transform: uppercase; letter-spacing: 3.5px; color: var(--gold); font-weight: 700; margin-bottom: 6px;">
+            Together With Their Families
+          </div>
+
+          <h1 id="hero-title" class="hero-names-english">
+            Rohan <span class="hero-ampersand">&amp;</span> Simran
+          </h1>
+
+          <p class="hero-tagline">
+            Request the pleasure of your company and heartfelt blessings as they embark on a lifetime of love and togetherness.
+          </p>
+        </div>
+
+        <!-- Grand Couple Showcase on Landing Page -->
+        <div class="hero-couple-card reveal-on-scroll">
+          <div class="hero-couple-grid">
+            <!-- Groom Portrait -->
+            <div class="hero-person-col">
+              <div class="hero-portrait-frame">
+                <img src="/assets/groom_image.png" alt="Rohan Deshmukh - Groom" class="hero-portrait-photo" width="210" height="210">
+              </div>
+              <h3 class="hero-portrait-name">Rohan Deshmukh</h3>
+              <span class="hero-portrait-role">The Groom</span>
+            </div>
+
+            <!-- Central Knot Medallion -->
+            <div class="hero-knot-center">
+              <div class="hero-knot-badge" aria-hidden="true">&amp;</div>
+              <span class="hero-knot-caption">United in Love</span>
+            </div>
+
+            <!-- Bride Portrait -->
+            <div class="hero-person-col">
+              <div class="hero-portrait-frame">
+                <img src="/assets/bride_image.png" alt="Simran Advani - Bride" class="hero-portrait-photo" width="210" height="210">
+              </div>
+              <h3 class="hero-portrait-name">Simran Advani</h3>
+              <span class="hero-portrait-role">The Bride</span>
+            </div>
+          </div>
+
+          <!-- Quote Banner inside card -->
+          <div class="hero-quote-card">
+            "In the sacred warmth of love and auspicious traditions, two journeys become one blessed path."
+          </div>
+        </div>
+
+        <!-- Auspicious Muhurat & Venue Details Ribbon -->
+        <div class="hero-muhurat-ribbon reveal-on-scroll">
+          <div class="hero-ribbon-item">
+            <span class="hero-ribbon-icon" aria-hidden="true">📅</span>
+            <span class="hero-ribbon-title">Wedding Date</span>
+            <span class="hero-ribbon-desc">Sunday, 14th Feb 2027</span>
+          </div>
+          <div class="hero-ribbon-item">
+            <span class="hero-ribbon-icon" aria-hidden="true">⏰</span>
+            <span class="hero-ribbon-title">Shubh Muhurat</span>
+            <span class="hero-ribbon-desc">11:30 AM IST (Auspicious Time)</span>
+          </div>
+          <div class="hero-ribbon-item">
+            <span class="hero-ribbon-icon" aria-hidden="true">🏛️</span>
+            <span class="hero-ribbon-title">Grand Mandap</span>
+            <span class="hero-ribbon-desc">The Royal Palace, Pune</span>
+          </div>
+        </div>
+
+        <!-- Festive Celebrations Highlights Pills -->
+        <div class="hero-highlights-pills reveal-on-scroll">
+          <span class="hero-pill">🌺 3 Days of Grand Celebrations</span>
+          <span class="hero-pill">🎶 Vibrant Mehendi &amp; Sangeet</span>
+          <span class="hero-pill">💛 Auspicious Haldi Ceremony</span>
+          <span class="hero-pill">🔥 Sacred Pheras &amp; Saptapadi</span>
+          <span class="hero-pill">🍽️ Royal Celebratory Banquet</span>
+        </div>
+
+        <!-- Hero Action Buttons -->
+        <div class="hero-cta-buttons reveal-on-scroll">
+          <a href="#events" class="btn btn-primary" style="font-size: 1rem; padding: 12px 28px;">
+            <span>📜 View Ceremonies &amp; Schedule</span>
+          </a>
+          <a href="#countdown" class="btn btn-outline" style="font-size: 1rem; padding: 12px 26px;">
+            <span>⏳ Live Countdown</span>
+          </a>
+          <a href="#rsvp" class="btn btn-maroon" style="font-size: 1rem; padding: 12px 28px;">
+            <span>💌 RSVP with Family</span>
+          </a>
+        </div>
+
+        <!-- Section Garland Divider -->
+        <div class="section-divider" aria-hidden="true" style="margin-top: 36px;">
+          <img src="/motifs/garland.svg" alt="" width="300" height="24">
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. OUR FAMILIES & BLESSINGS
+         ======================================================================= -->
+    <section id="families" class="section-wrapper" aria-labelledby="families-title">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <h2 id="families-title" class="section-title-en">Our Families</h2>
+          <p class="section-title-sub" style="font-size: 1rem; color: var(--ink-muted);">
+            United in Love, Joy &amp; Celebration
+          </p>
+        </div>
+
+        <div class="families-grid">
+          <!-- Groom's Family Card -->
+          <article class="family-card marathi-side reveal-on-scroll reveal-stagger-1">
+            <div class="family-side-badge">Groom's Family</div>
+            <h3 class="family-person-name">Rohan Deshmukh</h3>
+            <p class="family-parents-en" style="font-size: 1.05rem; font-weight: 600; color: var(--maroon); margin: 8px 0;">
+              Son of Smt. Sunita &amp; Shri Anand Deshmukh
+            </p>
+            <div style="margin-top: 16px; font-size: 0.88rem; color: var(--ink-muted);">
+              Grandson of Late Smt. Yamunabai &amp; Late Shri Yashwantrao Deshmukh
+            </div>
+          </article>
+
+          <!-- Bride's Family Card -->
+          <article class="family-card sindhi-side reveal-on-scroll reveal-stagger-2">
+            <div class="family-side-badge">Bride's Family</div>
+            <h3 class="family-person-name">Simran Advani</h3>
+            <p class="family-parents-en" style="font-size: 1.05rem; font-weight: 600; color: var(--terracotta); margin: 8px 0;">
+              Daughter of Smt. Kavita &amp; Shri Haresh Advani
+            </p>
+            <div style="margin-top: 16px; font-size: 0.88rem; color: var(--ink-muted);">
+              Granddaughter of Late Smt. Bhagwanti &amp; Late Shri Kishinchand Advani
+            </div>
+          </article>
+        </div>
+
+        <div class="blessing-banner reveal-on-scroll">
+          <p style="font-family: var(--font-serif-en); font-size: 1.25rem; color: var(--maroon); font-weight: 600; margin-bottom: 6px;">
+            "Two families united by love, blessed by traditions, and bound together for a lifetime."
+          </p>
+          <p style="font-size: 0.95rem; color: var(--ink-muted);">
+            With the graceful presence, love, and eternal blessings of our beloved grandparents, ancestors, and elders.
+          </p>
+        </div>
+
+        <div class="section-divider" aria-hidden="true">
+          <img src="/motifs/garland.svg" alt="" width="300" height="24">
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. COUNTDOWN SECTION
+         ======================================================================= -->
+    <section id="countdown" class="section-wrapper" aria-labelledby="countdown-title">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <h2 id="countdown-title" class="section-title-en">Counting Down the Moments</h2>
+          <p class="section-title-sub" style="font-size: 1rem; color: var(--ink-muted);">
+            Until We Tie the Knot
+          </p>
+        </div>
+
+        <div class="countdown-card reveal-on-scroll">
+          <!-- 4 Countdown Tiles: Days, Hours, Minutes, Seconds (English only) -->
+          <div id="countdown-tiles-grid" class="countdown-tiles-grid" aria-hidden="true">
+            <!-- Days Tile -->
+            <div class="countdown-tile">
+              <span id="count-days" class="countdown-num">00</span>
+              <div class="countdown-labels">
+                <span class="countdown-label-en">Days</span>
+              </div>
+            </div>
+
+            <!-- Hours Tile -->
+            <div class="countdown-tile">
+              <span id="count-hours" class="countdown-num">00</span>
+              <div class="countdown-labels">
+                <span class="countdown-label-en">Hours</span>
+              </div>
+            </div>
+
+            <!-- Minutes Tile -->
+            <div class="countdown-tile">
+              <span id="count-mins" class="countdown-num">00</span>
+              <div class="countdown-labels">
+                <span class="countdown-label-en">Minutes</span>
+              </div>
+            </div>
+
+            <!-- Seconds Tile -->
+            <div class="countdown-tile">
+              <span id="count-secs" class="countdown-num">00</span>
+              <div class="countdown-labels">
+                <span class="countdown-label-en">Seconds</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Screen Reader Accessible Live Region -->
+          <div id="countdown-sr-live" class="sr-only" aria-live="polite" aria-atomic="true">
+            Calculating time remaining until the wedding...
+          </div>
+
+          <!-- Celebratory state shown when countdown reaches zero -->
+          <div id="countdown-celebration" class="countdown-celebration">
+            🎉 Today is the Wedding Day! Let's Celebrate! 🎉
+          </div>
+
+          <p class="countdown-timezone-note">
+            Target Time: 14 February 2027 at 11:30 AM IST (Indian Standard Time, UTC+5:30)
+          </p>
+        </div>
+
+        <div class="section-divider" aria-hidden="true">
+          <img src="/motifs/garland.svg" alt="" width="300" height="24">
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         6. WEDDING EVENTS TIMELINE
+         ======================================================================= -->
+    <section id="events" class="section-wrapper" aria-labelledby="events-title">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <h2 id="events-title" class="section-title-en">Wedding Celebrations</h2>
+          <p class="section-title-sub" style="font-size: 1rem; color: var(--ink-muted);">
+            Ceremonies, Timings &amp; Dress Codes
+          </p>
+        </div>
+
+        <!-- Dynamic Timeline Cards Container (Filled from events.json) -->
+        <div id="events-timeline-container" class="events-timeline">
+          <!-- Rendered dynamically by events.js -->
+        </div>
+
+        <!-- Master Calendar Action: Download All Events into one .ics -->
+        <div class="master-calendar-box reveal-on-scroll">
+          <h4 style="font-family: var(--font-serif-en); font-size: 1.3rem; color: var(--maroon); margin-bottom: 6px;">
+            Add All Ceremonies to Your Calendar
+          </h4>
+          <p style="font-size: 0.95rem; color: var(--ink-muted); margin-bottom: 16px;">
+            Save Mehendi, Haldi, and Wedding &amp; Reception into your device's calendar in one click.
+          </p>
+          <button id="master-ics-btn" type="button" class="btn btn-primary">
+            <span>📥 Download All Events (.ics)</span>
+          </button>
+        </div>
+
+        <div class="section-divider" aria-hidden="true">
+          <img src="/motifs/garland.svg" alt="" width="300" height="24">
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         7. VENUES & MAPS
+         ======================================================================= -->
+    <section id="maps" class="section-wrapper" aria-labelledby="maps-title">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <h2 id="maps-title" class="section-title-en">Ceremony Venues &amp; Directions</h2>
+          <p class="section-title-sub" style="font-size: 1rem; color: var(--ink-muted);">
+            Locations &amp; Live Navigation
+          </p>
+          <p style="margin-top: 8px; font-size: 0.95rem; color: var(--ink-muted);">
+            All celebrations are held in Pune, Maharashtra. Click on any card for live GPS turn-by-turn navigation.
+          </p>
+        </div>
+
+        <!-- Dynamic Maps Container (Filled from events.json) -->
+        <div id="maps-container" class="maps-grid">
+          <!-- Rendered dynamically by events.js -->
+        </div>
+
+        <div class="section-divider" aria-hidden="true">
+          <img src="/motifs/garland.svg" alt="" width="300" height="24">
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         8. SAVE THE DATE & RSVP / CONTACT
+         ======================================================================= -->
+    <section id="rsvp" class="section-wrapper" aria-labelledby="rsvp-title">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <h2 id="rsvp-title" class="section-title-en">Save the Date &amp; RSVP</h2>
+          <p class="section-title-sub" style="font-size: 1rem; color: var(--ink-muted);">
+            We Look Forward to Celebrating With You
+          </p>
+        </div>
+
+        <div class="rsvp-card reveal-on-scroll">
+          <p style="font-family: var(--font-serif-en); font-size: 1.4rem; color: var(--maroon); margin-bottom: 8px; font-weight: 700;">
+            Your Presence is Our Greatest Blessing!
+          </p>
+          <p style="font-size: 1rem; color: var(--ink); line-height: 1.6; max-width: 550px; margin: 0 auto;">
+            Please let us know if you will be joining our celebrations so we can make your stay and welcome comfortable.
+          </p>
+
+          <div class="rsvp-cta-group">
+            <a id="whatsapp-rsvp-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1.05rem;">
+              <span>💬 Confirm via WhatsApp</span>
+            </a>
+            <a href="tel:+919876543210" class="btn btn-outline" style="font-size: 1.05rem;">
+              <span>📞 Call Family Coordinator</span>
+            </a>
+          </div>
+
+          <div class="contacts-list">
+            <p><strong>For any travel, accommodation, or venue questions:</strong></p>
+            <p style="margin-top: 4px;">Deshmukh &amp; Advani Family RSVP Coordinator: <strong>+91 98765 43210</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       9. FOOTER
+       ========================================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-names">Rohan &amp; Simran</div>
+      
+      <p style="font-family: var(--font-serif-en); font-size: 1.15rem; color: var(--marigold); margin-bottom: 12px; font-style: italic;">
+        "Two hearts, one journey, and a lifetime of shared joy."
+      </p>
+
+      <p style="font-size: 0.95rem; color: var(--cream); opacity: 0.9;">
+        With Heartfelt Gratitude &amp; Warm Regards,<br>
+        <strong>The Deshmukh &amp; Advani Families</strong>
+      </p>
+
+      <!-- Security / Privacy statement per SECURITY.md requirement -->
+      <div class="footer-privacy-note">
+        <p>🔒 Privacy Notice: This invitation website is purely static and stores no cookies or personal data.</p>
+        <p style="margin-top: 4px; font-size: 0.8rem; opacity: 0.8;">
+          Pune, Maharashtra • February 2027
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Bundle Bootstrap (ES Module) -->
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

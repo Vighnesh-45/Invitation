@@ -1,0 +1,56 @@
+[
+  {
+    "id": "mehendi",
+    "icon": "henna",
+    "title": {
+      "en": "Mehendi & Sangeet Ceremony"
+    },
+    "start": "2027-02-12T16:00:00+05:30",
+    "end": "2027-02-12T21:00:00+05:30",
+    "venueName": "Gulmohar Lawns",
+    "address": "Bungalow Road, Baner, Pune, Maharashtra 411045",
+    "mapQuery": "Gulmohar Lawns, Baner, Pune",
+    "dressCode": {
+      "en": "Pastel Festive / Vibrant Indo-Western"
+    },
+    "description": {
+      "en": "An enchanting evening of intricate henna motifs, joyous music, folk songs, dance, and spirited family celebrations."
+    }
+  },
+  {
+    "id": "haldi",
+    "icon": "turmeric",
+    "title": {
+      "en": "Haldi & Pithi Ceremony"
+    },
+    "start": "2027-02-13T09:30:00+05:30",
+    "end": "2027-02-13T12:30:00+05:30",
+    "venueName": "Shri Mangal Karyalaya Courtyard",
+    "address": "Prabhat Road, Deccan Gymkhana, Pune, Maharashtra 411004",
+    "mapQuery": "Prabhat Road, Deccan Gymkhana, Pune",
+    "dressCode": {
+      "en": "Shades of Sunshine Yellow & Ochre"
+    },
+    "description": {
+      "en": "A golden morning celebrating the auspicious paste of turmeric, fragrant marigolds, playful laughter, and heartfelt elders' blessings."
+    }
+  },
+  {
+    "id": "wedding",
+    "icon": "mandap",
+    "title": {
+      "en": "Wedding Ceremony & Grand Reception"
+    },
+    "start": "2027-02-14T11:30:00+05:30",
+    "end": "2027-02-14T16:30:00+05:30",
+    "venueName": "The Royal Palace Grand Mandap",
+    "address": "Senapati Bapat Road, Shivajinagar, Pune, Maharashtra 411016",
+    "mapQuery": "Senapati Bapat Road, Shivajinagar, Pune",
+    "dressCode": {
+      "en": "Traditional Indian / Royal Festive"
+    },
+    "description": {
+      "en": "Sacred wedding vows, pheras, and auspicious blessings uniting two loving families, followed by a grand celebratory banquet."
+    }
+  }
+]

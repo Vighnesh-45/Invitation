@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <radialGradient id="diyaFlame" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF9C4"/>
+      <stop offset="35%" stop-color="#FFD54F"/>
+      <stop offset="70%" stop-color="#FF9800"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </radialGradient>
+    <radialGradient id="flameGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFE082" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#FFB300" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FF8F00" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="brassBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082"/>
+      <stop offset="30%" stop-color="#FFB300"/>
+      <stop offset="70%" stop-color="#F57C00"/>
+      <stop offset="100%" stop-color="#7A1F2B"/>
+    </linearGradient>
+  </defs>
+  <!-- Flame Ambient Glow -->
+  <circle cx="50" cy="38" r="32" fill="url(#flameGlow)" class="diya-glow"/>
+  <!-- Diya Base / Stand -->
+  <path d="M 40 85 L 60 85 L 64 92 L 36 92 Z" fill="#B8860B"/>
+  <ellipse cx="50" cy="85" rx="14" ry="4" fill="#B8860B"/>
+  <!-- Diya Clay/Brass Pot -->
+  <path d="M 20 65 C 20 82 80 82 80 65 C 75 62 25 62 20 65 Z" fill="url(#brassBody)" stroke="#7A1F2B" stroke-width="1.5"/>
+  <ellipse cx="50" cy="63" rx="30" ry="8" fill="#F4A02B" stroke="#B8860B" stroke-width="1.5"/>
+  <ellipse cx="50" cy="62" rx="25" ry="5" fill="#E65100" opacity="0.6"/>
+  <!-- Diya Oil pool -->
+  <ellipse cx="50" cy="61" rx="18" ry="3.5" fill="#BF360C"/>
+  <!-- Diya Flame -->
+  <path d="M 50 58 C 41 46 39 30 50 14 C 61 30 59 46 50 58 Z" fill="url(#diyaFlame)" class="diya-flame"/>
+  <circle cx="50" cy="40" r="4.5" fill="#FFFFFF" opacity="0.9"/>
+</svg>

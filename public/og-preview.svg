@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFE3B3"/>
+      <stop offset="60%" stop-color="#FFF8EC"/>
+      <stop offset="100%" stop-color="#FFF0D4"/>
+    </linearGradient>
+    <linearGradient id="goldText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7A1F2B"/>
+      <stop offset="50%" stop-color="#C8553D"/>
+      <stop offset="100%" stop-color="#7A1F2B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Ornate Golden Border -->
+  <rect x="24" y="24" width="1152" height="582" rx="16" fill="none" stroke="#B8860B" stroke-width="3"/>
+  <rect x="34" y="34" width="1132" height="562" rx="12" fill="none" stroke="#7A1F2B" stroke-width="1.5" stroke-dasharray="8,6"/>
+
+  <!-- Corner ornaments -->
+  <circle cx="50" cy="50" r="10" fill="#FFC23C" stroke="#7A1F2B" stroke-width="2"/>
+  <circle cx="1150" cy="50" r="10" fill="#FFC23C" stroke="#7A1F2B" stroke-width="2"/>
+  <circle cx="50" cy="580" r="10" fill="#FFC23C" stroke="#7A1F2B" stroke-width="2"/>
+  <circle cx="1150" cy="580" r="10" fill="#FFC23C" stroke="#7A1F2B" stroke-width="2"/>
+
+  <!-- Auspicious header blessing -->
+  <text x="600" y="110" text-anchor="middle" font-family="'Cinzel', Georgia, serif" font-size="22" fill="#7A1F2B" letter-spacing="4">
+    WITH JOY AND BLESSINGS • WEDDING CELEBRATION
+  </text>
+  <text x="600" y="150" text-anchor="middle" font-family="'Cinzel', Georgia, serif" font-size="16" fill="#B8860B" letter-spacing="3">
+    TWO FAMILIES • ONE HEARTFELT JOURNEY
+  </text>
+
+  <!-- Big English Title -->
+  <text x="600" y="280" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="76" font-weight="bold" fill="url(#goldText)">
+    Rohan &amp; Simran
+  </text>
+
+  <text x="600" y="345" text-anchor="middle" font-family="'Inter', sans-serif" font-size="22" font-weight="600" fill="#3B1F1A" letter-spacing="3">
+    WE ARE GETTING MARRIED!
+  </text>
+
+  <!-- Date line -->
+  <rect x="380" y="400" width="440" height="60" rx="30" fill="#F4A02B"/>
+  <text x="600" y="440" text-anchor="middle" font-family="'Inter', sans-serif" font-size="22" font-weight="700" fill="#7A1F2B">
+    SUNDAY, 14TH FEBRUARY 2027 • PUNE
+  </text>
+
+  <!-- English Welcome line -->
+  <text x="600" y="525" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="22" font-style="italic" fill="#3B1F1A">
+    We warmly invite you to celebrate our special day with us.
+  </text>
+</svg>

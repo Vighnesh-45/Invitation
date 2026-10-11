@@ -1,0 +1,65 @@
+/* ==========================================================================
+   DESIGN TOKENS - MARATHI × SINDHI WEDDING INVITATION
+   ========================================================================== */
+
+:root {
+  /* Warm Color Palette */
+  --cream: #FFF8EC;
+  --ivory: #FFFDF7;
+  --saffron: #F4A02B;
+  --saffron-light: #FFD580;
+  --marigold: #FFC23C;
+  --marigold-glow: rgba(255, 194, 60, 0.4);
+  --terracotta: #C8553D;
+  --terracotta-dark: #A73E28;
+  --maroon: #7A1F2B;
+  --maroon-dark: #58121B;
+  --maroon-light: #942938;
+  --gold: #B8860B;
+  --gold-light: #DFB143;
+  --gold-shimmer: linear-gradient(135deg, #FFE58F 0%, #D4AF37 50%, #996515 100%);
+  --ink: #3B1F1A;
+  --ink-muted: #694A44;
+  --ink-light: #8E716B;
+
+  /* Language-specific Accent Colors */
+  --lang-marathi: #7A1F2B;
+  --lang-sindhi: #C8553D;
+  --lang-english: #3B1F1A;
+
+  /* Shadows & Elevations */
+  --shadow-sm: 0 2px 8px rgba(59, 31, 26, 0.06);
+  --shadow-md: 0 6px 20px rgba(59, 31, 26, 0.09);
+  --shadow-lg: 0 12px 36px rgba(122, 31, 43, 0.12);
+  --shadow-gold: 0 4px 20px rgba(184, 134, 11, 0.22);
+
+  /* Spacing Scale (8px system) */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-6: 48px;
+  --space-8: 64px;
+  --space-12: 96px;
+
+  /* Typography Stacks */
+  --font-serif-en: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  --font-sans-en: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-marathi: 'Tiro Devanagari Marathi', 'Noto Serif Devanagari', 'Rozha One', serif;
+  --font-sindhi-arabic: 'Noto Naskh Arabic', 'Scheherazade New', 'Amiri', serif;
+  --font-sindhi-deva: 'Noto Sans Devanagari', sans-serif;
+
+  /* Layout Boundaries */
+  --max-content-width: 1100px;
+  --max-text-width: 65ch;
+  --border-radius-sm: 8px;
+  --border-radius-md: 16px;
+  --border-radius-lg: 24px;
+  --border-radius-full: 9999px;
+
+  /* Transitions */
+  --ease-warm: cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-fast: 200ms ease;
+  --transition-normal: 350ms var(--ease-warm);
+  --transition-slow: 700ms var(--ease-warm);
+}

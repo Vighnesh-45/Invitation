@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 48" width="100%" height="48" preserveAspectRatio="none">
+  <defs>
+    <radialGradient id="gOrange" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFE082"/>
+      <stop offset="50%" stop-color="#FF9E00"/>
+      <stop offset="100%" stop-color="#E85D04"/>
+    </radialGradient>
+    <radialGradient id="gYellow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFDE7"/>
+      <stop offset="50%" stop-color="#FFD54F"/>
+      <stop offset="100%" stop-color="#FFA000"/>
+    </radialGradient>
+    <g id="gFlower">
+      <circle cx="0" cy="0" r="12" fill="url(#gOrange)"/>
+      <circle cx="0" cy="0" r="8" fill="url(#gYellow)"/>
+      <circle cx="0" cy="0" r="3" fill="#E85D04"/>
+    </g>
+    <g id="gFlowerAlt">
+      <circle cx="0" cy="0" r="12" fill="url(#gYellow)"/>
+      <circle cx="0" cy="0" r="8" fill="url(#gOrange)"/>
+      <circle cx="0" cy="0" r="3" fill="#D84315"/>
+    </g>
+  </defs>
+  <!-- Festoon thread -->
+  <path d="M 0 20 Q 150 36 300 20 Q 450 36 600 20" stroke="#B8860B" stroke-width="2" fill="none" opacity="0.6"/>
+  <!-- Beads and marigolds along the string -->
+  <use href="#gFlower" x="30" y="22"/>
+  <use href="#gFlowerAlt" x="75" y="27"/>
+  <use href="#gFlower" x="120" y="29"/>
+  <use href="#gFlowerAlt" x="165" y="29"/>
+  <use href="#gFlower" x="210" y="27"/>
+  <use href="#gFlowerAlt" x="255" y="23"/>
+  <use href="#gFlower" x="300" y="20"/>
+  <use href="#gFlowerAlt" x="345" y="23"/>
+  <use href="#gFlower" x="390" y="27"/>
+  <use href="#gFlowerAlt" x="435" y="29"/>
+  <use href="#gFlower" x="480" y="29"/>
+  <use href="#gFlowerAlt" x="525" y="27"/>
+  <use href="#gFlower" x="570" y="22"/>
+</svg>

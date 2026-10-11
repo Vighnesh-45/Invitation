@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" width="100%" height="100%" role="img" aria-label="Illustration of the groom in a Marathi wedding outfit welcoming you">
+  <defs>
+    <linearGradient id="phetaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9E00"/>
+      <stop offset="40%" stop-color="#F4A02B"/>
+      <stop offset="85%" stop-color="#E85D04"/>
+      <stop offset="100%" stop-color="#C8553D"/>
+    </linearGradient>
+    <linearGradient id="phetaFold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFE082"/>
+      <stop offset="50%" stop-color="#FFB300"/>
+      <stop offset="100%" stop-color="#FB8C00"/>
+    </linearGradient>
+    <linearGradient id="shelaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7A1F2B"/>
+      <stop offset="50%" stop-color="#9E2A2B"/>
+      <stop offset="100%" stop-color="#540B0E"/>
+    </linearGradient>
+    <linearGradient id="goldZari" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFE082"/>
+      <stop offset="50%" stop-color="#FFD54F"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+    <linearGradient id="kurtaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF7"/>
+      <stop offset="50%" stop-color="#FFF8EC"/>
+      <stop offset="100%" stop-color="#FCEFD8"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F5CBA7"/>
+      <stop offset="100%" stop-color="#E59866"/>
+    </linearGradient>
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#7A1F2B" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <g id="groom-avatar" filter="url(#subtleGlow)">
+    <!-- Body / Torso -->
+    <g id="kurta">
+      <!-- Kurta Base -->
+      <path d="M 180 430 L 140 850 L 460 850 L 420 430 Z" fill="url(#kurtaGrad)" stroke="#E0C9A6" stroke-width="2"/>
+      <!-- Kurta Placket & Gold buttons -->
+      <path d="M 292 430 L 292 640 L 308 640 L 308 430 Z" fill="url(#goldZari)"/>
+      <circle cx="300" cy="460" r="4" fill="#7A1F2B"/>
+      <circle cx="300" cy="500" r="4" fill="#7A1F2B"/>
+      <circle cx="300" cy="540" r="4" fill="#7A1F2B"/>
+      <circle cx="300" cy="580" r="4" fill="#7A1F2B"/>
+      <circle cx="300" cy="620" r="4" fill="#7A1F2B"/>
+      <!-- Kurta Collar (Mandarin) -->
+      <path d="M 255 425 C 275 440 325 440 345 425 L 350 410 C 320 420 280 420 250 410 Z" fill="#FFFDF7" stroke="#B8860B" stroke-width="2"/>
+    </g>
+
+    <!-- Marathi Royal Shela (Stole draped gracefully over right shoulder) -->
+    <g id="shela">
+      <path d="M 170 435 C 160 520 185 640 195 850 L 255 850 C 240 650 220 540 230 440 Z" fill="url(#shelaGrad)" stroke="#B8860B" stroke-width="2"/>
+      <!-- Shela Zari Border -->
+      <path d="M 195 830 L 255 830 L 255 850 L 195 850 Z" fill="url(#goldZari)"/>
+      <path d="M 195 815 L 255 815" stroke="#FFE082" stroke-width="3" stroke-dasharray="4,4"/>
+      <!-- Shela shoulder brooch -->
+      <circle cx="205" cy="450" r="9" fill="url(#goldZari)" stroke="#7A1F2B" stroke-width="2"/>
+      <circle cx="205" cy="450" r="4" fill="#7A1F2B"/>
+    </g>
+
+    <!-- Neck & Gold Chain -->
+    <g id="neck">
+      <path d="M 265 370 L 265 435 C 285 450 315 450 335 435 L 335 370 Z" fill="url(#skinGrad)"/>
+      <!-- Gold Chain -->
+      <path d="M 268 405 C 285 435 315 435 332 405" fill="none" stroke="url(#goldZari)" stroke-width="3.5" stroke-linecap="round"/>
+      <circle cx="300" cy="425" r="5" fill="#B8860B"/>
+    </g>
+
+    <!-- Head & Face -->
+    <g id="face">
+      <!-- Head shape -->
+      <path d="M 235 270 C 235 375 365 375 365 270 C 365 220 235 220 235 270 Z" fill="url(#skinGrad)" stroke="#D48B55" stroke-width="1.5"/>
+      <!-- Ears -->
+      <path d="M 232 280 C 220 280 220 315 234 320 Z" fill="url(#skinGrad)" stroke="#D48B55" stroke-width="1.5"/>
+      <path d="M 368 280 C 380 280 380 315 366 320 Z" fill="url(#skinGrad)" stroke="#D48B55" stroke-width="1.5"/>
+      <!-- Eyebrows -->
+      <path d="M 258 262 Q 275 255 290 262" stroke="#2B1810" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+      <path d="M 310 262 Q 325 255 342 262" stroke="#2B1810" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+      <!-- Warm Welcoming Eyes -->
+      <ellipse cx="274" cy="275" rx="7" ry="5.5" fill="#2B1810"/>
+      <ellipse cx="326" cy="275" rx="7" ry="5.5" fill="#2B1810"/>
+      <circle cx="276" cy="273" r="2" fill="#FFFFFF"/>
+      <circle cx="328" cy="273" r="2" fill="#FFFFFF"/>
+      <!-- Gentle Eyelids -->
+      <path d="M 264 272 Q 274 266 284 272" stroke="#3B1F1A" stroke-width="1.5" fill="none"/>
+      <path d="M 316 272 Q 326 266 336 272" stroke="#3B1F1A" stroke-width="1.5" fill="none"/>
+      <!-- Nose -->
+      <path d="M 300 270 Q 303 295 296 300 Q 300 304 306 300" stroke="#C87D45" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <!-- Traditional Marathi Chandrakor Tilak (Crescent Moon with bindi) -->
+      <path d="M 294 246 C 294 252 306 252 306 246 C 304 249 296 249 294 246 Z" fill="#7A1F2B"/>
+      <circle cx="300" cy="244" r="2" fill="#B8860B"/>
+      <!-- Friendly Moustache -->
+      <path d="M 284 316 Q 300 312 300 318 Q 300 312 316 316 Q 308 322 300 320 Q 292 322 284 316 Z" fill="#2B1810"/>
+      <!-- Warm Smile -->
+      <path d="M 288 328 Q 300 338 312 328" stroke="#7A1F2B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Marathi Pheta (Turban) -->
+    <g id="pheta">
+      <!-- Main wrapped crest -->
+      <path d="M 215 250 C 210 160 270 120 300 120 C 340 120 390 160 385 250 C 375 235 320 220 270 230 Z" fill="url(#phetaGrad)" stroke="#B8860B" stroke-width="2"/>
+      <!-- Pleats & Folds -->
+      <path d="M 225 210 Q 300 160 375 210" stroke="url(#phetaFold)" stroke-width="7" fill="none"/>
+      <path d="M 230 180 Q 300 140 370 180" stroke="url(#phetaFold)" stroke-width="6" fill="none"/>
+      <path d="M 240 150 Q 300 125 360 150" stroke="url(#phetaFold)" stroke-width="5" fill="none"/>
+      <!-- Majestic Kalgi / Sarpech Jewel on Pheta -->
+      <path d="M 294 135 L 306 135 L 300 95 Z" fill="url(#goldZari)" stroke="#7A1F2B" stroke-width="1.5"/>
+      <circle cx="300" cy="135" r="9" fill="url(#goldZari)" stroke="#7A1F2B" stroke-width="2"/>
+      <circle cx="300" cy="135" r="5" fill="#7A1F2B"/>
+      <!-- Feather feather plume on Kalgi -->
+      <path d="M 300 95 C 290 60 320 40 310 25 C 295 45 285 70 300 95 Z" fill="#FFFDF7" stroke="#B8860B" stroke-width="1.5"/>
+
+      <!-- Traditional Mundavalya (Pearl Strands ornament hanging from pheta across temples) -->
+      <!-- Left strand -->
+      <g id="mundavalya-left">
+        <path d="M 235 235 Q 220 280 225 340" stroke="#FFE082" stroke-width="1.5" fill="none" stroke-dasharray="1,5"/>
+        <circle cx="232" cy="245" r="3.5" fill="#FFFDF7" stroke="#B8860B" stroke-width="0.8"/>
+        <circle cx="228" cy="265" r="3.5" fill="#FFFDF7" stroke="#B8860B" stroke-width="0.8"/>
+        <circle cx="225" cy="285" r="3.5" fill="#FFFDF7" stroke="#B8860B" stroke-width="0.8"/>
+        <circle cx="224" cy="305" r="3.5" fill="#FFFDF7" stroke="#B8860B" stroke-width="0.8"/>
+        <circle cx="225" cy="325" r="3.5" fill="#FFFDF7" stroke="#B8860B" stroke-width="0.8"/>
+        <!-- Golden pendant bead at bottom -->
+        <circle cx="226" cy="342" r="5" fill="url(#goldZari)" stroke="#7A1F2B" stroke-width="1"/>
+      </g>
+      <!-- Right strand -->
+      <g id="mundavalya-right">
+        <path d="M 365 235 Q 380 280 375 340" stroke="#FFE082" stroke-width="1.5" fill="none" stroke-dasharray="1,5"/>
+        <circle cx="368" cy="245" r="3.5" fill="#FFFDF7" stroke="#B8860B" stroke-width="0.8"/>
+        <circle cx="372" cy="265" r="3.5" fill="#FFFDF7" stroke="#B8860B" stroke-width="0.8"/>
+        <circle cx="375" cy="285" r="3.5" fill="#FFFDF7" stroke="#B8860B" stroke-width="0.8"/>
+        <circle cx="376" cy="305" r="3.5" fill="#FFFDF7" stroke="#B8860B" stroke-width="0.8"/>
+        <circle cx="375" cy="325" r="3.5" fill="#FFFDF7" stroke="#B8860B" stroke-width="0.8"/>
+        <!-- Golden pendant bead at bottom -->
+        <circle cx="374" cy="342" r="5" fill="url(#goldZari)" stroke="#7A1F2B" stroke-width="1"/>
+      </g>
+    </g>
+
+    <!-- Arms & Namaste / Welcoming Pose -->
+    <g id="arms-namaste">
+      <!-- Left Upper Arm -->
+      <path d="M 180 440 C 140 500 170 580 240 580 L 250 540 C 200 530 180 480 200 440 Z" fill="url(#kurtaGrad)" stroke="#E0C9A6" stroke-width="2"/>
+      <!-- Right Upper Arm -->
+      <path d="M 420 440 C 460 500 430 580 360 580 L 350 540 C 400 530 420 480 400 440 Z" fill="url(#kurtaGrad)" stroke="#E0C9A6" stroke-width="2"/>
+
+      <!-- Forearms meeting in center -->
+      <path d="M 240 580 C 265 570 285 530 290 500 L 275 490 C 265 520 245 545 230 550 Z" fill="url(#skinGrad)"/>
+      <path d="M 360 580 C 335 570 315 530 310 500 L 325 490 C 335 520 355 545 370 550 Z" fill="url(#skinGrad)"/>
+
+      <!-- Golden Kada / Bracelet on right wrist -->
+      <ellipse cx="320" cy="520" rx="9" ry="5" fill="url(#goldZari)" stroke="#7A1F2B" stroke-width="1.5" transform="rotate(-25, 320, 520)"/>
+      <!-- Golden Watch/Ring on left hand -->
+      <ellipse cx="280" cy="520" rx="9" ry="5" fill="url(#goldZari)" stroke="#7A1F2B" stroke-width="1.5" transform="rotate(25, 280, 520)"/>
+
+      <!-- Hands in Namaste (Folded Palms) -->
+      <g id="folded-hands">
+        <!-- Palms together -->
+        <path d="M 288 470 C 285 450 296 430 300 420 C 304 430 315 450 312 470 C 310 495 290 495 288 470 Z" fill="url(#skinGrad)" stroke="#D48B55" stroke-width="1.5"/>
+        <!-- Finger details -->
+        <line x1="295" y1="440" x2="295" y2="465" stroke="#C87D45" stroke-width="1.2"/>
+        <line x1="305" y1="440" x2="305" y2="465" stroke="#C87D45" stroke-width="1.2"/>
+        <line x1="300" y1="428" x2="300" y2="475" stroke="#C87D45" stroke-width="1.5"/>
+        <!-- Ring on finger -->
+        <circle cx="291" cy="455" r="2.5" fill="url(#goldZari)"/>
+      </g>
+    </g>
+  </g>
+</svg>
