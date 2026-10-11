@@ -91,13 +91,13 @@ export const renderEvents = (events) => {
 
       <div class="event-actions-row">
         <a href="${buildGoogleCalendarUrl(event)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 0.9rem; padding: 10px 20px;">
-          <span>📅 Add to Google Calendar</span>
+          <span>Add to Google Calendar</span>
         </a>
         <button type="button" class="btn btn-outline single-ics-btn" data-event-id="${event.id}" style="font-size: 0.9rem; padding: 10px 20px;">
-          <span>📥 Apple / Outlook (.ics)</span>
+          <span>Apple / Outlook (.ics)</span>
         </button>
         <a href="${buildDirectionsUrl(event.mapQuery)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="font-size: 0.9rem; padding: 10px 20px;">
-          <span>📍 Directions</span>
+          <span>Directions</span>
         </a>
       </div>
     `;
