@@ -1,24 +1,24 @@
 {
   "brideName": {
     "en": "Harshita",
-    "fullName": "Harshita Advani",
+    "fullName": "Harshita Motwani",
     "parents": {
-      "en": "Daughter of Smt. Kavita & Shri Haresh Advani"
+      "en": "Daughter of Mrs. Menna & Mr. Sunil Motwani"
     }
   },
   "groomName": {
     "en": "Harshal",
-    "fullName": "Harshal Deshmukh",
+    "fullName": "Harshal Vaidya",
     "parents": {
-      "en": "Son of Smt. Sunita & Shri Anand Deshmukh"
+      "en": "Son of Mrs. Samiksha Vaidya & Mr. Sameer Vaidya"
     }
   },
   "weddingStart": "2026-12-12T10:00:00+05:30",
   "weddingCity": "Mumbai, Maharashtra",
   "contact": {
-    "whatsappPhone": "919876543210",
-    "displayPhone": "+91 98765 43210",
-    "coordinator": "Advani & Deshmukh Families"
+    "whatsappPhone": "+91 98677 07568",
+    "displayPhone": "+91 98677 07568",
+    "coordinator": "Motwani & Vaidya Families"
   },
-  "siteUrl": "https://harshita-weds-harshal.love"
+  "siteUrl": "https://lagna-amantran.vercel.app/"
 }
