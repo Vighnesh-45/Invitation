@@ -19,9 +19,17 @@ const escapeICSField = (text) => {
 /**
  * Builds a direct Google Calendar template URL
  */
+const getEndTime = (event) => {
+  if (event.end) return event.end;
+  // fallback: start + 2 hours
+  const d = new Date(event.start);
+  d.setHours(d.getHours() + 2);
+  return d.toISOString();
+};
+
 export const buildGoogleCalendarUrl = (event) => {
   const startFmt = formatToICSDate(event.start);
-  const endFmt = formatToICSDate(event.end);
+  const endFmt = formatToICSDate(getEndTime(event));
   const title = encodeURIComponent(event.title.en);
   const details = encodeURIComponent(
     `${event.description.en}\n\n(Traditional dress: ${event.dressCode?.en || 'Festive Indian'})`
@@ -37,7 +45,7 @@ export const buildGoogleCalendarUrl = (event) => {
 const generateVEvent = (event) => {
   const dtStamp = formatToICSDate(new Date().toISOString());
   const dtStart = formatToICSDate(event.start);
-  const dtEnd = formatToICSDate(event.end);
+  const dtEnd = formatToICSDate(getEndTime(event));
   const uid = `${event.id}-harshita-harshal-2026@wedding`;
 
   return [

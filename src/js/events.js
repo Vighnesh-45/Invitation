@@ -15,7 +15,6 @@ const EVENT_ICONS = {
 
 const formatEventDateRange = (startIso, endIso) => {
   const start = new Date(startIso);
-  const end = new Date(endIso);
 
   const dateStr = start.toLocaleDateString('en-IN', {
     weekday: 'long',
@@ -32,14 +31,20 @@ const formatEventDateRange = (startIso, endIso) => {
     timeZone: 'Asia/Kolkata'
   });
 
-  const endTimeStr = end.toLocaleTimeString('en-IN', {
-    hour: '2-digit',
-    minute: '2-digit',
-    hour12: true,
-    timeZone: 'Asia/Kolkata'
-  });
+  if (endIso) {
+    const end = new Date(endIso);
+    if (!isNaN(end.getTime())) {
+      const endTimeStr = end.toLocaleTimeString('en-IN', {
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: true,
+        timeZone: 'Asia/Kolkata'
+      });
+      return { dateStr, timeStr: `${startTimeStr} – ${endTimeStr} IST` };
+    }
+  }
 
-  return { dateStr, timeStr: `${startTimeStr} – ${endTimeStr} IST` };
+  return { dateStr, timeStr: `${startTimeStr} onwards IST` };
 };
 
 export const renderEvents = (events) => {

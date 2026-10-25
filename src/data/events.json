@@ -3,7 +3,7 @@
     "id": "mehendi",
     "icon": "henna",
     "title": {
-      "en": "Mehendi & Sangeet Ceremony"
+      "en": "Mehendi & DJ"
     },
     "start": "2026-12-10T16:00:00+05:30",
     "end": "2026-12-10T21:00:00+05:30",
@@ -11,9 +11,6 @@
     "address": "Jogeshwari - Vikhroli Link Rd, JVLR, Jogeshwari East, Mumbai, Maharashtra 400060",
     "mapQuery": "Oberoi Splendor, JVLR, Jogeshwari East, Mumbai",
     "directMapUrl": "https://maps.app.goo.gl/MsfohXGLxdaoJCfk8?g_st=iw",
-    "dressCode": {
-      "en": "Pastel Festive / Vibrant Indo-Western"
-    },
     "description": {
       "en": "An enchanting evening of intricate henna motifs, joyous music, folk songs, dance, and spirited family celebrations."
     }
@@ -22,17 +19,13 @@
     "id": "haldi",
     "icon": "turmeric",
     "title": {
-      "en": "Haldi & Pithi Ceremony"
+      "en": "Ganesh Sthapana"
     },
-    "start": "2026-12-11T10:00:00+05:30",
-    "end": "2026-12-11T13:00:00+05:30",
-    "venueName": "Courtyard & Banquet Lawn",
-    "address": "Jogeshwari - Vikhroli Link Rd, Mumbai, Maharashtra 400060",
-    "mapQuery": "Jogeshwari East, Mumbai",
-    "directMapUrl": "https://maps.app.goo.gl/MsfohXGLxdaoJCfk8?g_st=iw",
-    "dressCode": {
-      "en": "Shades of Sunshine Yellow & Ochre"
-    },
+    "start": "2026-12-11T17:30:00+05:30",
+    "venueName": "Motwani's Home",
+    "address": "Dheeraj Ganga, Chincholi Bunder, Malad West, Mumbai, Maharashtra 400064",
+    "mapQuery": "Malad West, Mumbai",
+    "directMapUrl": "https://maps.app.goo.gl/FB2zVZMiKbVPsxLH9?g_st=iw",
     "description": {
       "en": "A golden morning celebrating the auspicious paste of turmeric, fragrant marigolds, playful laughter, and heartfelt elders' blessings."
     }
@@ -44,7 +37,6 @@
       "en": "Gurudwara Wedding"
     },
     "start": "2026-12-12T10:00:00+05:30",
-    "end": "2026-12-12T13:30:00+05:30",
     "venueName": "Gurdwara Malad, Sri Guru Nanak Satsang Sabha",
     "address": "Podar Park, Behind Vaishnav Haveli, Malad East, Mumbai, Maharashtra 400097",
     "mapQuery": "Gurdwara Malad, Sri Guru Nanak Satsang Sabha, Malad East, Mumbai",
@@ -60,17 +52,13 @@
     "id": "wedding",
     "icon": "mandap",
     "title": {
-      "en": "Wedding Ceremony & Grand Reception"
+      "en": "Maharashtrian Wedding"
     },
-    "start": "2026-12-13T18:00:00+05:30",
-    "end": "2026-12-13T23:30:00+05:30",
+    "start": "2026-12-13T10:30:00+05:30",
     "venueName": "Golden Leaf Banquet",
     "address": "5th Floor, Link House Building, Chincholi Bunder Signal, Link Rd, Mindspace, Malad West, Mumbai, Maharashtra 400064",
     "mapQuery": "Golden Leaf Banquet, Malad West, Mumbai",
     "directMapUrl": "https://maps.app.goo.gl/dn1w1dys3hpaS74D9?g_st=iw",
-    "dressCode": {
-      "en": "Traditional Indian / Royal Festive"
-    },
     "description": {
       "en": "Sacred wedding vows, pheras, and auspicious blessings uniting Harshita and Harshal, followed by a grand celebratory banquet."
     }

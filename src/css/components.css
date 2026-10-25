@@ -1136,31 +1136,21 @@
     gap: 32px;
   }
 
-  /* Mehendi (left) and Haldi (right) horizontally */
-  #map-mehendi {
-    grid-column: 1;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-
-  #map-haldi {
-    grid-column: 2;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-
-  /* Wedding venue down below, centered in between mehendi and haldi directions */
+  #map-mehendi,
+  #map-haldi,
+  #map-gurudwara,
   #map-wedding {
-    grid-column: 1 / -1;
-    justify-self: center;
-    max-width: 780px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 100%;
+  }
+
+  #map-gurudwara,
+  #map-wedding {
     border: 2.5px solid var(--gold);
-    box-shadow: var(--shadow-md), 0 0 24px rgba(244, 160, 43, 0.22);
+    box-shadow: var(--shadow-md), 0 0 20px rgba(244, 160, 43, 0.2);
     background: linear-gradient(180deg, #FFFDF7 0%, #FFF9EE 100%);
   }
 }
@@ -1219,23 +1209,16 @@
 }
 
 @media (min-width: 768px) {
-  #map-mehendi .map-card-footer,
-  #map-haldi .map-card-footer {
+  .map-card .map-card-footer {
     flex-direction: column;
     align-items: stretch;
     gap: 12px;
+    padding: 16px 20px;
   }
 
-  #map-mehendi .map-card-footer .btn,
-  #map-haldi .map-card-footer .btn {
-    align-self: flex-start;
-  }
-
-  #map-wedding .map-card-footer {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 28px;
+  .map-card .map-card-footer .btn {
+    align-self: stretch;
+    text-align: center;
   }
 }
 
@@ -1341,9 +1324,11 @@
 
   #event-mehendi,
   #event-haldi,
+  #event-gurudwara,
   #event-wedding,
   #map-mehendi,
   #map-haldi,
+  #map-gurudwara,
   #map-wedding {
     grid-column: 1 / -1;
     width: 100%;
