@@ -38,7 +38,7 @@ const generateVEvent = (event) => {
   const dtStamp = formatToICSDate(new Date().toISOString());
   const dtStart = formatToICSDate(event.start);
   const dtEnd = formatToICSDate(event.end);
-  const uid = `${event.id}-rohan-simran-2027@wedding`;
+  const uid = `${event.id}-harshita-harshal-2026@wedding`;
 
   return [
     'BEGIN:VEVENT',
@@ -57,14 +57,14 @@ const generateVEvent = (event) => {
 /**
  * Downloads a .ics file containing one or multiple events
  */
-export const downloadICS = (events, filename = 'rohan-simran-wedding.ics') => {
+export const downloadICS = (events, filename = 'harshita-harshal-wedding.ics') => {
   const eventList = Array.isArray(events) ? events : [events];
   const vevents = eventList.map(generateVEvent).join('\r\n');
 
   const icsContent = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
-    'PRODID:-//Rohan and Simran Wedding Invitation//EN',
+    'PRODID:-//Harshita and Harshal Wedding Invitation//EN',
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
     vevents,

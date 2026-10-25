@@ -43,7 +43,7 @@ const setupWhatsAppRSVP = () => {
   if (!rsvpBtn || !config.contact?.whatsappPhone) return;
 
   const msg = encodeURIComponent(
-    `Hello! We received your wedding invitation for ${config.groomName.en} & ${config.brideName.en}. We are thrilled to celebrate with your families!`
+    `Hello! We received your wedding invitation for ${config.brideName.en} & ${config.groomName.en}. We are thrilled to celebrate with your families!`
   );
 
   rsvpBtn.href = `https://wa.me/${config.contact.whatsappPhone}?text=${msg}`;

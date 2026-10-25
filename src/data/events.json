@@ -5,11 +5,12 @@
     "title": {
       "en": "Mehendi & Sangeet Ceremony"
     },
-    "start": "2027-02-12T16:00:00+05:30",
-    "end": "2027-02-12T21:00:00+05:30",
-    "venueName": "Gulmohar Lawns",
-    "address": "Bungalow Road, Baner, Pune, Maharashtra 411045",
-    "mapQuery": "Gulmohar Lawns, Baner, Pune",
+    "start": "2026-12-10T16:00:00+05:30",
+    "end": "2026-12-10T21:00:00+05:30",
+    "venueName": "Oberoi Splendor",
+    "address": "Jogeshwari - Vikhroli Link Rd, JVLR, Jogeshwari East, Mumbai, Maharashtra 400060",
+    "mapQuery": "Oberoi Splendor, JVLR, Jogeshwari East, Mumbai",
+    "directMapUrl": "https://maps.app.goo.gl/MsfohXGLxdaoJCfk8?g_st=iw",
     "dressCode": {
       "en": "Pastel Festive / Vibrant Indo-Western"
     },
@@ -23,11 +24,12 @@
     "title": {
       "en": "Haldi & Pithi Ceremony"
     },
-    "start": "2027-02-13T09:30:00+05:30",
-    "end": "2027-02-13T12:30:00+05:30",
-    "venueName": "Shri Mangal Karyalaya Courtyard",
-    "address": "Prabhat Road, Deccan Gymkhana, Pune, Maharashtra 411004",
-    "mapQuery": "Prabhat Road, Deccan Gymkhana, Pune",
+    "start": "2026-12-11T10:00:00+05:30",
+    "end": "2026-12-11T13:00:00+05:30",
+    "venueName": "Courtyard & Banquet Lawn",
+    "address": "Jogeshwari - Vikhroli Link Rd, Mumbai, Maharashtra 400060",
+    "mapQuery": "Jogeshwari East, Mumbai",
+    "directMapUrl": "https://maps.app.goo.gl/MsfohXGLxdaoJCfk8?g_st=iw",
     "dressCode": {
       "en": "Shades of Sunshine Yellow & Ochre"
     },
@@ -36,21 +38,41 @@
     }
   },
   {
+    "id": "gurudwara",
+    "icon": "mandap",
+    "title": {
+      "en": "Gurudwara Wedding"
+    },
+    "start": "2026-12-12T10:00:00+05:30",
+    "end": "2026-12-12T13:30:00+05:30",
+    "venueName": "Gurdwara Malad, Sri Guru Nanak Satsang Sabha",
+    "address": "Podar Park, Behind Vaishnav Haveli, Malad East, Mumbai, Maharashtra 400097",
+    "mapQuery": "Gurdwara Malad, Sri Guru Nanak Satsang Sabha, Malad East, Mumbai",
+    "directMapUrl": "https://maps.app.goo.gl/BMpkmpd6MTn5PprF8?g_st=iw",
+    "dressCode": {
+      "en": "Traditional Indian / Graceful Pastel (Head Covering Required)"
+    },
+    "description": {
+      "en": "Sacred Anand Karaj ceremony in the holy presence of Guru Granth Sahib Ji, uniting Harshita and Harshal with divine blessings, prayer, and community langar."
+    }
+  },
+  {
     "id": "wedding",
     "icon": "mandap",
     "title": {
       "en": "Wedding Ceremony & Grand Reception"
     },
-    "start": "2027-02-14T11:30:00+05:30",
-    "end": "2027-02-14T16:30:00+05:30",
-    "venueName": "The Royal Palace Grand Mandap",
-    "address": "Senapati Bapat Road, Shivajinagar, Pune, Maharashtra 411016",
-    "mapQuery": "Senapati Bapat Road, Shivajinagar, Pune",
+    "start": "2026-12-13T18:00:00+05:30",
+    "end": "2026-12-13T23:30:00+05:30",
+    "venueName": "Golden Leaf Banquet",
+    "address": "5th Floor, Link House Building, Chincholi Bunder Signal, Link Rd, Mindspace, Malad West, Mumbai, Maharashtra 400064",
+    "mapQuery": "Golden Leaf Banquet, Malad West, Mumbai",
+    "directMapUrl": "https://maps.app.goo.gl/dn1w1dys3hpaS74D9?g_st=iw",
     "dressCode": {
       "en": "Traditional Indian / Royal Festive"
     },
     "description": {
-      "en": "Sacred wedding vows, pheras, and auspicious blessings uniting two loving families, followed by a grand celebratory banquet."
+      "en": "Sacred wedding vows, pheras, and auspicious blessings uniting Harshita and Harshal, followed by a grand celebratory banquet."
     }
   }
 ]

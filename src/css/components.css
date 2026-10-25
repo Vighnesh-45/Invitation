@@ -950,31 +950,19 @@
     gap: 32px;
   }
 
-  /* Mehendi (left) and Haldi (right) horizontally */
-  #event-mehendi {
-    grid-column: 1;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-
-  #event-haldi {
-    grid-column: 2;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-
-  /* Wedding ceremony down below, centered in between mehendi and haldi */
+  #event-mehendi,
+  #event-haldi,
+  #event-gurudwara,
   #event-wedding {
-    grid-column: 1 / -1;
-    justify-self: center;
-    max-width: 780px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  #event-gurudwara,
+  #event-wedding {
     border: 2.5px solid var(--gold);
-    box-shadow: var(--shadow-md), 0 0 24px rgba(244, 160, 43, 0.22);
+    box-shadow: var(--shadow-md), 0 0 20px rgba(244, 160, 43, 0.2);
     background: linear-gradient(180deg, #FFFDF7 0%, #FFF9EE 100%);
   }
 }

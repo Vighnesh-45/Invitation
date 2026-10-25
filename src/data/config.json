@@ -1,24 +1,24 @@
 {
-  "groomName": {
-    "en": "Rohan",
-    "fullName": "Rohan Deshmukh",
-    "parents": {
-      "en": "Son of Smt. Sunita & Shri Anand Deshmukh"
-    }
-  },
   "brideName": {
-    "en": "Simran",
-    "fullName": "Simran Advani",
+    "en": "Harshita",
+    "fullName": "Harshita Advani",
     "parents": {
       "en": "Daughter of Smt. Kavita & Shri Haresh Advani"
     }
   },
-  "weddingStart": "2027-02-14T11:30:00+05:30",
-  "weddingCity": "Pune, Maharashtra",
+  "groomName": {
+    "en": "Harshal",
+    "fullName": "Harshal Deshmukh",
+    "parents": {
+      "en": "Son of Smt. Sunita & Shri Anand Deshmukh"
+    }
+  },
+  "weddingStart": "2026-12-12T10:00:00+05:30",
+  "weddingCity": "Mumbai, Maharashtra",
   "contact": {
     "whatsappPhone": "919876543210",
     "displayPhone": "+91 98765 43210",
-    "coordinator": "Deshmukh & Advani Families"
+    "coordinator": "Advani & Deshmukh Families"
   },
-  "siteUrl": "https://rohan-weds-simran.love"
+  "siteUrl": "https://harshita-weds-harshal.love"
 }

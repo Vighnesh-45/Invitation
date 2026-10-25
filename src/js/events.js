@@ -96,7 +96,7 @@ export const renderEvents = (events) => {
         <button type="button" class="btn btn-outline single-ics-btn" data-event-id="${event.id}" style="font-size: 0.9rem; padding: 10px 20px;">
           <span>Apple / Outlook (.ics)</span>
         </button>
-        <a href="${buildDirectionsUrl(event.mapQuery)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="font-size: 0.9rem; padding: 10px 20px;">
+        <a href="${event.directMapUrl || buildDirectionsUrl(event.mapQuery)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="font-size: 0.9rem; padding: 10px 20px;">
           <span>Directions</span>
         </a>
       </div>
@@ -106,7 +106,7 @@ export const renderEvents = (events) => {
     const icsBtn = card.querySelector('.single-ics-btn');
     if (icsBtn) {
       icsBtn.addEventListener('click', () => {
-        downloadICS(event, `${event.id}-rohan-simran.ics`);
+        downloadICS(event, `${event.id}-harshita-harshal.ics`);
       });
     }
 
@@ -131,7 +131,7 @@ export const renderEvents = (events) => {
         </div>
         <div class="map-card-footer">
           <span class="map-address-text">📍 ${event.address}</span>
-          <a href="${buildDirectionsUrl(event.mapQuery)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 0.85rem; padding: 8px 18px;">
+          <a href="${event.directMapUrl || buildDirectionsUrl(event.mapQuery)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 0.85rem; padding: 8px 18px;">
             Open in Google Maps
           </a>
         </div>
@@ -144,7 +144,7 @@ export const renderEvents = (events) => {
   // 3. Master Calendar Download All Events
   if (masterIcsBtn) {
     masterIcsBtn.addEventListener('click', () => {
-      downloadICS(events, 'rohan-simran-all-wedding-events.ics');
+      downloadICS(events, 'harshita-harshal-all-wedding-events.ics');
     });
   }
 };
