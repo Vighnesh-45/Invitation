@@ -21,18 +21,21 @@ const escapeICSField = (text) => {
  */
 const getEndTime = (event) => {
   if (event.end) return event.end;
+  if (!event.start) return new Date().toISOString();
   // fallback: start + 2 hours
   const d = new Date(event.start);
+  if (isNaN(d.getTime())) return new Date().toISOString();
   d.setHours(d.getHours() + 2);
   return d.toISOString();
 };
 
 export const buildGoogleCalendarUrl = (event) => {
+  if (!event.start) return '#';
   const startFmt = formatToICSDate(event.start);
   const endFmt = formatToICSDate(getEndTime(event));
   const title = encodeURIComponent(event.title.en);
   const details = encodeURIComponent(
-    `${event.description.en}\n\n(Traditional dress: ${event.dressCode?.en || 'Festive Indian'})`
+    `${event.description?.en || ''}\n\n(Traditional dress: ${event.dressCode?.en || 'Festive Indian'})`
   );
   const location = encodeURIComponent(`${event.venueName}, ${event.address}`);
 
@@ -44,7 +47,7 @@ export const buildGoogleCalendarUrl = (event) => {
  */
 const generateVEvent = (event) => {
   const dtStamp = formatToICSDate(new Date().toISOString());
-  const dtStart = formatToICSDate(event.start);
+  const dtStart = event.start ? formatToICSDate(event.start) : dtStamp;
   const dtEnd = formatToICSDate(getEndTime(event));
   const uid = `${event.id}-harshita-harshal-2026@wedding`;
 
@@ -55,7 +58,7 @@ const generateVEvent = (event) => {
     `DTSTART:${dtStart}`,
     `DTEND:${dtEnd}`,
     `SUMMARY:${escapeICSField(event.title.en)}`,
-    `DESCRIPTION:${escapeICSField(event.description.en)}`,
+    `DESCRIPTION:${escapeICSField(event.description?.en || '')}`,
     `LOCATION:${escapeICSField(`${event.venueName}, ${event.address}`)}`,
     'STATUS:CONFIRMED',
     'END:VEVENT'

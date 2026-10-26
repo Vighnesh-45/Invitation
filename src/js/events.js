@@ -14,7 +14,18 @@ const EVENT_ICONS = {
 };
 
 const formatEventDateRange = (startIso, endIso) => {
+  if (!startIso) {
+    return { dateStr: 'Date To Be Announced', timeStr: '' };
+  }
+
+  // Date-only strings (e.g. "2026-12-10") have no time — skip time display
+  const hasTime = startIso.includes('T');
+
   const start = new Date(startIso);
+
+  if (isNaN(start.getTime())) {
+    return { dateStr: 'Date To Be Announced', timeStr: '' };
+  }
 
   const dateStr = start.toLocaleDateString('en-IN', {
     weekday: 'long',
@@ -23,6 +34,10 @@ const formatEventDateRange = (startIso, endIso) => {
     day: 'numeric',
     timeZone: 'Asia/Kolkata'
   });
+
+  if (!hasTime) {
+    return { dateStr, timeStr: '' };
+  }
 
   const startTimeStr = start.toLocaleTimeString('en-IN', {
     hour: '2-digit',
@@ -76,7 +91,7 @@ export const renderEvents = (events) => {
 
       <div class="event-datetime-badge">
         <span aria-hidden="true">🗓</span>
-        <span>${dateStr} • ${timeStr}</span>
+        <span>${dateStr}${timeStr ? ` • ${timeStr}` : ''}</span>
       </div>
 
       <div class="event-meta-block">
@@ -90,9 +105,10 @@ export const renderEvents = (events) => {
         </div>` : ''}
       </div>
 
+${event.description?.en ? `
       <p class="event-description-text">
         "${event.description.en}"
-      </p>
+      </p>` : ''}
 
       <div class="event-actions-row">
         <a href="${buildGoogleCalendarUrl(event)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 0.9rem; padding: 10px 20px;">
